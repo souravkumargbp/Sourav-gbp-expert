@@ -1,12 +1,17 @@
+import Image from 'next/image';
+
 export default function SouravGBPExpertSite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-100 text-gray-800 font-sans">
       <header className="bg-black text-white py-10 text-center shadow-md">
-        <img
-          src="/logo.png"
-          alt="Sourav Kumar Logo"
-          className="w-20 h-20 mx-auto mb-4 rounded-full"
-        />
+        <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden relative">
+          <Image
+            src="/logo.png"
+            alt="Sourav Kumar Logo"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <h1 className="text-5xl font-bold tracking-wide">Sourav Kumar</h1>
         <p className="text-xl mt-3">SEO & Google Business Profile Optimization Expert</p>
       </header>
